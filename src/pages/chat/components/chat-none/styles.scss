@@ -1,0 +1,13 @@
+.msg-content {
+  background-color: white;
+  width: calc(100% - 250px);
+  .header {
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+  }
+}

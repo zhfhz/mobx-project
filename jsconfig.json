@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@src/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@services/*": ["src/services/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["./src/**/*"]
+}

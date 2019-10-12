@@ -1,0 +1,125 @@
+.login-page {
+  min-height: unset !important;
+  display: flex;
+  flex-grow: 0 !important;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background: #C5D8F9 url("../../assets/img/bg.png") no-repeat center;
+  background-size: cover;
+  .logo_container {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    color: #FFF;
+    font-size: 14px;
+  }
+  .welcome {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: #FFF;
+    font-size: 40px;
+  }
+  .copyRight {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+  }
+  .form-container {
+    position: relative;
+    background-color: #FFF;
+    border-radius: 4px;
+
+    width: 430px;
+    height: 430px;
+    padding: 40px;
+    transform: translateY(-10%) translateX(-40%);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .qr-code {
+      width: 240px;
+      height: 240px;
+      align-self: center;
+      flex-shrink: 0;
+    }
+
+    .switch-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+
+    > h1 {
+      font-weight: 400;
+      font-size: 1.4rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .ant-input {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .login-form-button {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .form-bottom {
+      width: 100%;
+      text-align: center;
+      color: #7D7C7C;
+
+      span {
+        font-weight: 400;
+        padding: 0 10px;
+        &:nth-of-type(1) {
+            border-right:1px solid #E2E2E2;
+        }
+        a  {
+            color: #7D7C7C;
+        }
+      }
+    }
+  }
+}
+.picCode_container {
+  .ant-input-affix-wrapper {
+    width: 220px
+  }
+  img {
+    width: 90px;
+    height: 40px;
+    float: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 380px !important;
+    height: 380px !important;
+    margin: auto;
+    padding: 10px 20px !important;
+    transform: translateY(-10%) translateX(0) !important;
+  }
+  .picCode_container {
+    .ant-input-affix-wrapper {
+      width: 170px
+    }
+    img {
+      width: 80px;
+      height: 40px;
+      float: right;
+    }
+  }
+}
+

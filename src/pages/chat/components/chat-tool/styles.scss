@@ -1,0 +1,42 @@
+@import '../../chat-vars.scss';
+
+.toolbar{
+  .columns{
+    display: inline-flex;
+    max-width: 100%;
+    flex-direction: row;
+    &>*{
+      margin-left: 10px;
+    }
+    &>:first-child{
+      margin-left: 0px;
+    }
+  }
+  .file_c {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    input {
+      margin: 0;
+      padding: 0;
+      width: 20px;
+      height: 26px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+    }
+  }
+  .room-modal {
+    .ant-modal-header {
+      background-color: #f8f8f8;
+      border-bottom: 0;
+    }
+    .ant-modal-footer {
+      border-top: 0;
+      text-align: center;
+    }
+  }
+}

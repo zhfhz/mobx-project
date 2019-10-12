@@ -1,0 +1,74 @@
+@import '../../chat-vars.scss';
+
+.design-item {
+  &.display-cursor{
+    cursor: pointer;
+  }
+  .display-cursor{
+    cursor: pointer;
+  }
+  margin-bottom: 10px;
+  p {
+    padding: 0;
+  }
+  p,
+  span {
+    color: #333;
+  }
+  .design-no {
+    margin: 10px auto;
+  }
+  .design-content {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    .design-title {
+      padding: 0 10px;
+      width: 100%;
+    }
+    .design-title p {
+      padding: 0;
+    }
+  }
+  .design-tail {
+    text-align: right;
+  }
+  .send-button {
+    text-align: right;
+    margin: 10px 0;
+    p,
+    span {
+      color: #fff;
+    }
+    .ant-btn-primary {
+      color: #fff;
+      border: none;
+    }
+  }
+  .tail-block {
+    width: 100%;
+    height: 6px;
+    background-color: #f8f8f8;
+  }
+  .img-container {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #eaeaea;
+    position: relative;
+    .img {
+      width: 78px;
+      height: 78px;
+    }
+    // overflow: hidden;
+    span.pre_tip {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #fe6a6a;
+      color: #fff;
+    }
+  }
+}

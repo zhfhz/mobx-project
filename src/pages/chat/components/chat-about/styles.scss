@@ -1,0 +1,152 @@
+@import '../../chat-vars.scss';
+
+.right-nav-container {
+  height: 100%;
+}
+.nav-header {
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.12);
+  padding: 10px 0;
+  text-align: center;
+  .ant-input-affix-wrapper,
+  .ant-input {
+    width: 360px;
+  }
+  .ant-input {
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(241, 241, 241, 1);
+    border-radius: 15px;
+    margin: 10px auto;
+  }
+  .ant-radio-group {
+    width: 100%;
+  }
+  .ant-radio-button-wrapper {
+    width: 21%;
+  }
+}
+.nav-content {
+  padding: 15px 10px;
+  height: calc(100% - 100px);
+}
+h1 {
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 44px;
+  margin: 0;
+}
+p {
+  padding: 10px;
+  color: #999;
+}
+.design-item {
+  margin-bottom: 10px;
+  p,
+  span {
+    color: #333;
+  }
+  .design-no {
+    margin: 10px auto;
+  }
+  .design-content {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    .design-title {
+      padding: 0 10px;
+      width: 100%;
+    }
+    .design-title p {
+      padding: 0;
+    }
+  }
+  .design-tail {
+    text-align: right;
+  }
+  .send-button {
+    text-align: right;
+    margin: 10px 0;
+    p,
+    span {
+      color: #fff;
+    }
+    .ant-btn-primary {
+      color: #fff;
+      border: none;
+    }
+  }
+  .tail-block {
+    width: 100%;
+    height: 6px;
+    background-color: #f8f8f8;
+  }
+  .img-container {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #eaeaea;
+    // overflow: hidden;
+    span.pre_tip {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      text-align: center;
+      background-color: #fe6a6a;
+      color: #fff;
+      width: 100%;
+    }
+  }
+  img {
+    max-width: 79px;
+    max-height: 79px;
+  }
+}
+.goods_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .left_container {
+    width: 80px;
+    text-align: center;
+    background-color: #f8f8f8;
+    li {
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    li.active {
+      background-color: #fff;
+      color: #4dbecd;
+    }
+  }
+  .right_container {
+    width: calc(100% - 80px);
+    padding: 10px;
+    ul {
+      width: 100%;
+      margin-bottom: 20px;
+      li {
+        width: 25%;
+        display: inline-block;
+        cursor: pointer;
+      }
+      li.active {
+        text-decoration: underline;
+        color: #4dbecd;
+      }
+    }
+    .design-item {
+      width: 100%;
+    }
+  }
+}
+.room-modal {
+  .ant-modal-header {
+    background-color: #f8f8f8;
+    border-bottom: 0;
+  }
+  .ant-modal-footer {
+    border-top: 0;
+    text-align: center;
+  }
+}

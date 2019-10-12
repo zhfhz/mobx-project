@@ -1,0 +1,158 @@
+.register-page {
+  background-color: #FFF;
+}
+.ant-form.register {
+    margin: 0 auto;
+    div.industry {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width:380px;
+    //   margin-left:10px;
+    //   &::before {
+    //     content:'*';
+    //     color: red;
+    //     position: absolute;
+    //     left: 0px;
+    //   }
+      label {
+        margin-left: 22px;
+      }
+      .ant-select {
+        width:300px;
+        height:40px;
+        float: right;
+      }
+      .ant-select-selection--single {
+        border: none;
+        height:39px;
+      }
+      .ant-select-selection__rendered {
+        line-height: 40px;
+        margin-left: 22px;
+      }
+    }
+    .ant-input {
+      width: 380px;
+      height: 42px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 100px;
+    }
+    .ant-input-affix-wrapper::before {
+    //   content:'*';
+    //   color:red;
+    //   margin-right:5px;
+    }
+    .ant-upload-select::before {
+    //   content:'*';
+    //   color:red;
+    //   margin-right:5px;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix {
+      left:22px;
+    }
+    input#CheckCode.ant-input {
+      width:235px;
+    }
+    .ant-btn {
+      background-color: #FF9900;
+      width:134px;
+      height:42px;
+      color: #FFF;
+      border: none;
+      margin-left: 5px;
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+    }
+    .ant-btn.register {
+      width: 385px;
+      background-color: #4dbecd;
+      font-size: 16px;
+    }
+    //.avatar-uploader {
+    //  background-image: url("../../assets/img/logo11.png");
+    //}
+    div.ant-upload-text {
+      background-image: url('../../assets/img/yingyezhizao.png');
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      border: none;
+      width: 80px;
+      height: 80px;
+      background-color: #FFF;
+    }
+    .ant-upload.ant-upload-select-picture-card > .ant-upload {
+      padding: 0;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+    input.ant-checkbox-input{
+      width: 20px;
+      height: 20px;
+    }
+    .ant-checkbox-inner {
+      width: 20px;
+      height: 20px;
+    }
+    .ant-checkbox-inner:after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 5px;
+      width: 8px;
+      height: 13px;
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .ant-form-item label {
+      margin-right: 20px;
+    }
+    .has-error.has-feedback .ant-form-item-children:after {
+      content:''
+    }
+    span.agreementTip:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .anticon-close-circle{
+      margin-left: -60px;
+    }
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      margin-left: 10px;
+    }
+    a:link, a:hover, a:visited,a:active {
+      text-decoration: none;
+    }
+  }
+  .ant-modal.agreement {
+    .ant-modal-title {
+      text-align: center;
+    }
+    .ant-modal-footer {
+      text-align: center;
+    }
+    .ant-modal-footer .ant-btn {
+      width: auto;
+      // background-color: #FFF;
+      // color: #333333;
+      height: 32px;
+      // border: 1px solid #CCC;
+    }
+  }
+  div.delete-container {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    .anticon-close-circle.delete-icon {
+        position: absolute;
+        left: 60px;
+        top: -5px;
+        font-size: 18px;
+    }
+  }

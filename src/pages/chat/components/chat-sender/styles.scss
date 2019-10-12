@@ -1,0 +1,24 @@
+@import '../../chat-vars.scss';
+
+.toolbar {
+  border-top: $border;
+  padding: 10px;
+  color: #d9d9d9;
+  .file_c {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    input {
+      margin: 0;
+      padding: 0;
+      width: 20px;
+      height: 26px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+    }
+  }
+}

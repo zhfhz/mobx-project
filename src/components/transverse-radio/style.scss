@@ -1,0 +1,67 @@
+.emake-transverse-radios {
+    position: relative;
+    padding: 0 58px 0 140px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    .transverse-label {
+        font-size: 14px;
+        display: block;
+        width: 140px;
+        position: absolute;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color: #F3F4F4;
+        color: #999;
+    }
+    .transverse-icon {
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        padding: 2px;
+        color: #ccc;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .transverse-radios-list {
+        list-style: none;
+        overflow: hidden;
+        padding: 0 12px;
+        margin: 0;
+    }
+    .transverse-radios-list li {
+        float: left;
+        width: 88px;
+        height: 42px;
+        line-height: 42px;
+        margin-right: 8px;
+        input {
+            cursor: pointer;
+            width: 14px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 14px;
+            outline: none;
+        }
+        label {
+            cursor: pointer;
+            font-size: 14px;
+            vertical-align: top;
+            width: 72px;
+            padding-left: 2px;
+            display: inline-block;
+            height: 42px;
+            line-height: 42px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

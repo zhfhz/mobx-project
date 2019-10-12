@@ -1,0 +1,200 @@
+$siderWidth: 250px;
+
+.app {
+  height: 100%;
+  .ant-menu{
+    background-color: #151516;
+    color: #fff;
+    .ant-menu-item{
+      background-color: #151516;
+    }
+  }
+  .ant-layout-sider {
+    min-width: $siderWidth!important;
+    max-width: $siderWidth!important;
+    width: $siderWidth!important;
+    overflow: auto;
+  }
+  .ant-layout-sider-trigger{
+    display: none
+  }
+  .ant-layout-content{
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+  .ant-menu-inline{
+    width: 251px;
+  }
+  .chooseDesign{
+    padding: 20px;
+    background: #ffffff;
+    margin: 0 0px 24px 0px;
+  }
+  p.detailsinfo{
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 9px;
+    line-height: 30px;
+}
+}
+*::-webkit-scrollbar {
+  display: none
+}
+.user_setting_container{
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  li{
+    width: 100%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    padding-right: 12px;
+  }
+}
+.user_setting_container li:hover {
+  background-color: rgb(9, 118, 190);
+  color: #fff;
+}
+.ant-table-body{
+  font-size: 12px
+}
+.ant-layout-header.myHeader {
+  background-color: #FFF;
+  padding: 0 200px;
+  height:64px;
+  display:flex;
+  justify-content: space-around;
+  z-index: 9999;
+  box-shadow:0px 2px 20px 0px rgba(0,0,0,0.2);
+  img {
+    margin-right: 10px;
+  }
+}
+.change_password {
+  width: 380px;
+  margin: 0 auto;
+  .ant-form.change-form {
+    margin: 0 auto;
+    .ant-input {
+      width: 380px;
+      height: 42px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 100px;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix {
+      left:22px;
+    }
+    .ant-btn {
+      background-color: #FF9900;
+      width:134px;
+      height:42px;
+      color: #FFF;
+      border: none;
+      margin-left: 5px;
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+    }
+    .ant-btn.register {
+      width: 385px;
+      background-color: #4dbecd;
+      font-size: 16px;
+    }
+    .ant-form-item label {
+      margin-right: 20px;
+    }
+    .has-error.has-feedback .ant-form-item-children:after {
+      content:''
+    }
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      margin-left: 10px;
+    }
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-color: #FFF;
+  }
+  .ant-upload.ant-upload-select-picture-card > .ant-upload {
+    padding: 0;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+}
+.btnGroup {
+  text-align: center;
+  .ant-btn {
+    width: 140px;
+    height: 40px;
+    margin-right:10px;
+  }
+}
+.img_container {
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    max-width: 120px;
+  }
+  .delete-container {
+    position: absolute;
+  }
+  
+}
+.app-float {
+  opacity: 0.8;
+  position: fixed;
+  right: 20px;
+  width: 160px;
+  background-color: #51B8A6;
+  color: white;
+  font-size: 0.875em;
+  border-radius: 4px;
+  transition: all .3s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: move;
+  user-select: none;
+
+  &:hover {
+    box-shadow: 0 1px 4px #666;
+  }
+
+  .op-icon {
+    width: 12px;
+    margin-left: 4px;
+  }
+
+  &.close {
+    height: 120px;
+    .main-icon {
+      width: 56px;
+      cursor: pointer;
+    }
+  }
+
+  &.open {
+    height: 260px;
+
+    .sub-item {
+      cursor: pointer;
+      align-self: flex-start;
+      padding: 0 16px;
+    }
+
+    .sub-icon {
+      width: 20px;
+    }
+  }
+}
+

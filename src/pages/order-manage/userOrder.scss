@@ -1,0 +1,25 @@
+.user-order{
+    height: 100%;
+    .switch_comp{
+        margin-bottom: 12px;
+    }
+    .ellipsis{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+    }
+    span.presellTip {
+        display: inline-block;
+        width: 100%;
+        background-color: #EE6666;
+        color: #FFF;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: 0
+    }
+}

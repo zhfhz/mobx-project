@@ -1,0 +1,17 @@
+.switch_comp{
+  border-bottom: 1px solid #f8f8f8;
+  ._label{
+    color: #7F7F7F;
+    text-decoration: none;
+  }
+  .wrapper{
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 24px;
+    height: 30px;
+  }
+}
+.switch_comp ._label:hover{
+  color: #33CCCC;
+}

@@ -1,0 +1,136 @@
+.asset_page {
+  height:100%;
+    .info_container {
+        height: 30px;
+        color: #FFC600;
+        line-height: 30px;
+        margin-top: 12px;
+        background-color: rgba(255,251,239,1);
+        padding: 0 12px;
+        .anticon {
+            background-color: #FFC600;
+            color: #FFF;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    }
+    .total_info {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #EAEAEA;
+        color: #333;
+        margin: 20px 0;
+        p.money {
+            font-size: 16px;
+        }
+        span {
+            margin-right: 8px;
+        }
+        p.total, span.total {
+            color: #33cccc;
+        }
+        .balance {
+            width: 220px;
+            height: 154px;
+            padding: 40px;
+            background: rgba(255,255,255,1);
+            box-shadow: 6px 0px 8px 0px rgba(0,0,0,0.1);
+        }
+        .ant-row {
+            width: calc(100% - 220px);
+            padding: 24px 0;
+            .ant-col-4 {
+                padding: 16px 15px;
+                border-right: 1px solid #EAEAEA;
+                &:nth-of-type(6) {
+                    border: none;
+                }
+            }
+        }
+    }
+    .ant-table-wrapper {
+      margin-top:10px;
+    }
+}
+.ant-form.withdraw {
+    margin: 20px auto;
+    width: 430px;
+    .ant-input {
+      width: 380px;
+      height: 42px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 100px;
+    }
+    .ant-input-affix-wrapper::before {
+      // content:'*';
+      // color:red;
+      // margin-right:5px;
+    }
+    .ant-upload-select::before {
+      content:'*';
+      color:red;
+      margin-right:5px;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix {
+      left:22px;
+    }
+    input#CheckCode.ant-input {
+      width:235px;
+    }
+    .ant-btn {
+      background-color: #FF9900;
+      width: 124px;
+      height:42px;
+      color: #FFF;
+      border: none;
+      margin-left: 5px;
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+    }
+    .ant-btn.withdraw {
+      width: 380px;
+      background-color: #4dbecd;
+      font-size: 16px;
+    }
+    .ant-form-item label {
+      margin-right: 20px;
+    }
+    .has-error.has-feedback .ant-form-item-children:after {
+      content:''
+    }
+    span.agreementTip:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .anticon-close-circle{
+      margin-left: -60px;
+    }
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      margin-left: 10px;
+    }
+    a:link, a:hover, a:visited,a:active {
+      text-decoration: none;
+    }
+  }
+  .tip_container {
+    p {
+      line-height: 22px;
+      margin: 0;
+      span {
+        color: #4dbecd;
+        text-decoration: underline;
+      }
+    }
+  }
+  .ant-modal {
+    .body-mesage {
+      .ant-btn {
+        width:104px;
+        height:42px;
+      }
+    }
+  }

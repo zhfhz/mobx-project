@@ -1,0 +1,77 @@
+.product{
+    height: 100%;
+    .switch_comp{
+        margin-bottom: 12px;
+    }
+    .ellipsis{
+        display: block;
+        width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // -webkit-line-clamp: 3;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+    }
+    // .ellipsisLine{
+    //     -webkit-line-clamp: 1;
+    // }
+    .wrap{
+        WORD-WRAP:break-word;
+        TABLE-LAYOUT:fixed;
+        word-break:break-all;
+    }
+    // .ellipsis:hover{
+    //     // 鼠标移入显示全部内容
+    //     text-overflow:inherit; 
+    //     overflow: visible; 
+    //     white-space: pre-line;
+    // }
+}
+.product-tip-modal{
+    .ant-modal-content{
+        width: 438px;
+        .ant-modal-header{
+            background: #F8F8F8;
+        }
+        .ant-modal-footer{
+            text-align: center;
+            .ant-btn{
+                border-color: #33CCCC;
+                color: #33CCCC;
+                width: 90px;
+                border-radius: 0;
+            }
+            .ant-btn-primary{
+                color: #fff;
+            }
+        }
+    }
+}
+.product-cooperate-modal{
+    .ant-modal-content{
+        padding: 0 10px;
+        width: 620px;
+        .ant-modal-body{
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            padding: 10px;
+        }
+        .ant-modal-header,.ant-modal-footer{
+            text-align: center;
+        }
+        .ant-modal-footer{
+            .ant-btn{
+                color: #fff;
+                background-color: #33CCCC;
+                width: 90px;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+
+
+

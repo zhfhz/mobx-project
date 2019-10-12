@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/logo_white.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="google" content="notranslate" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>都市智造-超级线上工厂</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body,
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      #loading {
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      #loading span {
+        display: inline-block;
+        width: 8px;
+        height: 100%;
+        border-radius: 4px;
+        background: lightgreen;
+        -webkit-animation: load 1s ease infinite;
+      }
+
+      @-webkit-keyframes load {
+        0%,
+        100% {
+          height: 40px;
+          background: lightgreen;
+        }
+
+        50% {
+          height: 70px;
+          margin: -15px 0;
+          background: lightblue;
+        }
+      }
+
+      #loading span:nth-child(2) {
+        -webkit-animation-delay: 0.2s;
+      }
+
+      #loading span:nth-child(3) {
+        -webkit-animation-delay: 0.4s;
+      }
+
+      #loading span:nth-child(4) {
+        -webkit-animation-delay: 0.6s;
+      }
+
+      #loading span:nth-child(5) {
+        -webkit-animation-delay: 0.8s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="loading">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script>
+      window.onload = function() {
+        var root = document.getElementById('root');
+        var loading = document.getElementById('loading');
+        root.style.setProperty('opacity', 1);
+        loading.style.setProperty('opacity', 0);
+        setTimeout(function() {
+          loading.parentElement.removeChild(loading);
+        }, 300);
+      };
+    </script>
+  </body>
+</html>
